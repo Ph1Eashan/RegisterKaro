@@ -1,0 +1,151 @@
+/* styles/RegisterForm.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0px 0;
+  background-color: #1b4670;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backgroundImg {
+  /* position: absolute; */
+  bottom: 0;
+}
+
+.rightImg1 {
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.vector {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.register-form {
+  margin-top: 71px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  /* width: 100%; */
+  max-width: 508px;
+  position: relative;
+  z-index: 2;
+  margin-right: 65px;
+}
+
+.form-header {
+  margin-bottom: 46px;
+}
+
+.fullLogo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.form-body {
+  padding: 33px;
+  background: #164760;
+  border-radius: 16px;
+}
+
+.form-body h2 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.13px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 28px;
+  word-spacing: 8px;
+}
+
+.form-body h2 span {
+  color: #ffa229;
+}
+
+.mobile-input {
+}
+
+.mobile-input select {
+  float: left;
+  width: 25%;
+  padding: 12px;
+  margin-bottom: 0;
+}
+
+.mobile-input input {
+  float: right;
+  width: 73%;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 0px 0 26px 0;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #376176;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+form button {
+  width: 253px;
+  padding: 10px;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e68a00;
+}
+
+@media only screen and (max-width: 700px) {
+  .backgroundImg {
+    display: none;
+  }
+
+  .subContainer {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .register-form {
+    margin-right: 0;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-body h2 {
+    font-size: 15px;
+  }
+
+  form button {
+    width: 80%;
+  }
+}

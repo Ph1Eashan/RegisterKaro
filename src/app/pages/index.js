@@ -6,10 +6,6 @@ import "../styles/RegisterForm.css"; // Import CSS file
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>RegisterKaro</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <RegisterForm />
       </main>
